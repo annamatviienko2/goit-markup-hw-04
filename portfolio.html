@@ -18,27 +18,41 @@
 </head>
 
 <body>
+
     <!--шапка сайта-->
-    <header class="page-header">
-        <div class="container header-list">
-            <nav class="main-nav">
-                <a href=".index.html" class="logo">
-                    Web<span class="logo-studioheader">Studio</span> </a>
-    
-                <ul class="nav">
-                    <li class="item"> <a class="nav-link" href="./index.html"> Студія </a></li>
-                    <li class="item"> <a class="nav-link current" href="./portfolio.html"> Портфоліо </a></li>
-                    <li class="item"> <a class="nav-link" href="#"> Контакти </a></li>
-                </ul>
-            </nav>
-    
-            <ul class="contact">
-                <li class="contact-item"> <a class="contact-list" href="mailto:info@devstudio.com">info@devstudio.com </a>
-                </li>
-                <li class="contact-item"> <a class="contact-list" href="tel:+380961111111">+380961111111</a></li>
-            </ul>
+       <header class = "page-header">
+        <div class="container header-list"> 
+        <nav class ="main-nav">
+         <a href=".index.html" class = "logo"> 
+             Web<span class="logo-studioheader">Studio</span> </a>
+
+         <ul class = "nav">
+            <li class="item"> <a class="nav-link" href="./index.html"> Студія </a></li>
+            <li class="item"> <a class= "nav-link current" href="./portfolio.html"> Портфоліо </a></li>
+            <li class="item"> <a class = "nav-link" href="#"> Контакти </a></li>
+         </ul>
+        </nav>
+
+         <ul class = "contact"> 
+           <li class="contact-item"> 
+            <a class="contact-list" href="mailto:info@devstudio.com">
+                <svg class="icon-contact" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                </svg>                             
+                info@devstudio.com 
+            </a> 
+        </li> 
+           <li class="contact-item"> 
+            <a class="contact-list" href="tel:+380961111111">
+                <svg class="icon-contact" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +380961111111
+            </a>
+        </li>                 
+         </ul>
         </div>
-    </header>
+     </header>
 
     <!-- універсальний контент сторінки -->
     <main>
@@ -161,20 +175,59 @@
     <!-- підвал сайта -->
 
     <footer class="footer">
-       <div class="container">
-           <a href=".index.html" class="logo logo-footer">
-            <span class="logo-web">Web</span><span class="logo-studiofooter">Studio</span> </a>
-           
-            <address class="address">
-              <Ul>
-                <li class="map"><a class="address-list googlemap " href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                        target="_blank" rel="noopener noreferrer nofollow"> м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="mailto"> <a class="address-list email" href="mailto:info@devstudio.com"> info@devstudio.com
-                    </a> </li>
-                <li><a class="address-list phone" href="tel:+380961111111"> +380961111111</a> </li>
-             </Ul>
-           </address>
-       </div>
+
+    <div class="container footer-container"> 
+
+ <!--адреса в підвалі-->
+    <div> 
+    <a href=".index.html" class="logo logo-footer">
+        <span class="logo-web">Web</span><span class="logo-studiofooter">Studio</span> </a>
+    <address class="address">
+       <Ul>
+        <li class="map"><a class="address-list googlemap " href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"> м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li class="mailto"> <a class="address-list email" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
+        <li><a class="address-list phone" href="tel:+380961111111"> +380961111111</a> </li>
+       </Ul>
+      </address>
+     </div>
+
+<!--соцмережі в підвалі-->
+
+     <div class="footer-socialbox">
+        <p class="item-footer"> Приєднуйтесь </p>
+        <ul class="social-footer list">
+            <li class="icon-social">
+                <a class="icon-footer-link" href>
+                    <svg class="icon-footer" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"> </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-social">
+                <a class="icon-footer-link" href>
+                    <svg class="icon-footer" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"> </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-social">
+                <a class="icon-footer-link" href>
+                    <svg class="icon-footer" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"> </use>
+                    </svg>
+                </a>
+            </li>
+            <li class="icon-social">
+                <a class="icon-footer-link" href>
+                    <svg class="icon-footer" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"> </use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+     </div>
+    </div>
+
      </footer>
 
   </body>
