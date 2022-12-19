@@ -179,7 +179,8 @@ color: var(--background-color);
 }
 
 .contact-list {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -196,6 +197,7 @@ color: var(--background-color);
 
 .contact-list:hover, .contact-list:focus {
     color: var(--text-accent-color);
+    fill: var(--text-accent-color);
 
     font-weight: 500;
     font-size: 14px;
@@ -205,25 +207,20 @@ color: var(--background-color);
 
 .icon-contact {
     margin-right: 10px;
-    fill: var(--paragraf-color);
-}
+  }
 
-.icon-contact:hover {
-   
-    fill: var(--text-accent-color);
-}
+
 
     /* стилі головної сторінки */
 
 
 .hero {
 
-    background-color: #2F303A;
-
+   
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    height: 600px;
+   
     margin-left: auto;
     margin-right: auto;
     
@@ -397,6 +394,7 @@ color: var(--background-color);
 }
 
 .team-signature {
+
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -416,7 +414,7 @@ color: var(--background-color);
 
 .team-profession {
 
-    margin: 16px;
+    margin-bottom: 16px;
     
     font-weight: 400;
     font-size: 16px;
@@ -428,6 +426,7 @@ color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .icon-social {
@@ -444,7 +443,7 @@ color: var(--background-color);
     border-radius: 50%;
     background-color: var(--background-color);
     fill: #AFB1B8;
-    margin-right: 10px;
+    
    
 }
 
@@ -509,7 +508,7 @@ color: var(--background-color);
 }
 
 .button-item:hover, .button-item:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 }
 
 .portfolio-button {
@@ -532,6 +531,7 @@ color: var(--background-color);
 
     background-color: var(--text-accent-color);
     color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
    
 }
 
@@ -563,17 +563,19 @@ color: var(--background-color);
 
 }
 
-
-.project {
-text-decoration: none;
-
-}
-
 .project-item:hover {
 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
+
+
+.project-link {
+text-decoration: none;
+
+}
+
+
 
 .project-image {
     margin-bottom: 20px;
@@ -703,6 +705,7 @@ text-decoration: none;
 .social-footer {
     display: flex;
     align-items: baseline;
+    gap: 10px;
 }
 
 .icon-social {
