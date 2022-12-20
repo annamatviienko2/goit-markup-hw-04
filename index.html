@@ -52,13 +52,31 @@
 
      <!--головна частина-->
      <main>
+
     <!--секція №1-->
+
         <section class = "hero">
             <div class="container"> 
+
             <h1 class = "hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
-            <button type="button" class = "hero-button"> Замовити послугу </button>
+            <button data-modal-open type="button" class = "hero-button"> Замовити послугу </button>
+
+            <div class="backdrop" data-modal>
+                <div class="modal">
+                    <button data-modal-close type="button" class="modal-button">
+                        <svg class="modal-cross" width="30" height="30">
+                            <use href="./images/cross_close.svg#cross"> </use>
+                        </svg>
+                    </button>
+                </div>
             </div>
+         
+        </div>
         </section>
+
+<!--модальне вікно-->
+
+       
 
         
     <!--секція №2-->
@@ -119,9 +137,32 @@
             <div class="container"> 
         <h2 class = "section-title">Чим ми займаємося </h2>
         <ul class="section-list">
-            <li  class="section-image"> <img src="./images/photo1.jpg" alt="Людина друкує на комп'ютері" width="370"> </li>
-            <li  class="section-image"><img src="./images/photo2.jpg" alt="Мобільний телефон в руці" width="370"></li>
-            <li  class="section-image"><img src="./images/photo3.jpg" alt="Планшет в руках" width="370"></li>
+            <li  class="section-image">
+                <div class="section-thumb"> 
+                 <img src="./images/photo1.jpg" alt="Людина друкує на комп'ютері" width="370"> 
+                    <div class="section-signature">
+                       <p class="section-paragraph"> Десктопні додатки </p>
+                    </div>
+                </div>              
+            </li>
+
+            <li  class="section-image">
+                <div class="section-thumb">
+                <img src="./images/photo2.jpg" alt="Мобільний телефон в руці" width="370">
+                <div class="section-signature">
+                    <p class="section-paragraph"> Мобільні додатки </p>
+                </div>
+                </div>
+            </li>
+
+            <li  class="section-image">
+                <div class="section-thumb">
+                <img src="./images/photo3.jpg" alt="Планшет в руках" width="370">
+                <div class="section-signature">
+                    <p class="section-paragraph"> Дизайнерські рішення </p>
+                </div>
+                </div>
+            </li>
         </ul>
         </div>
     </section>
@@ -432,5 +473,7 @@
 
      </footer>
 
+    <script src="./js/modal.js"></script>
+    
 </body>
 </html>
